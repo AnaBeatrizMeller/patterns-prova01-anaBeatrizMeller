@@ -23,6 +23,7 @@ class Bus {
   }
 }
 
+
 // Cliente
 function main(type) {
   let smallVehicle;

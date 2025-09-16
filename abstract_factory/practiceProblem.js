@@ -5,6 +5,7 @@ class PdfReport {
   }
 }
 
+
 class PdfInvoice {
   generate() {
     return "Fatura em PDF gerada!";
