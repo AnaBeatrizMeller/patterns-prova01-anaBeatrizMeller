@@ -5,6 +5,7 @@ class DebitCard {
   }
 }
 
+
 class CreditCard {
   pay(type, amount) {
     console.log(`Pagando com ${type} no valor de R$ ${amount}`);
