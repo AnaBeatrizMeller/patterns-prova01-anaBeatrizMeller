@@ -14,6 +14,7 @@ class Logger {
   }
 }
 
+
 // Cliente cria várias instâncias
 const logger1 = new Logger();
 logger1.log("Primeira mensagem");
