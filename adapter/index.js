@@ -14,6 +14,8 @@ class ExternalPaymentService {
   }
 }
 
+
+
 // Adapter que "traduz" ExternalPaymentService para o formato esperado
 class ExternalPaymentAdapter extends PaymentProcessor {
   constructor(externalService) {

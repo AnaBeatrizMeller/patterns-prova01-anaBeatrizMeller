@@ -5,6 +5,7 @@ class FileSystemItem {
   }
 }
 
+
 // Folha
 class File extends FileSystemItem {
   constructor(name) {

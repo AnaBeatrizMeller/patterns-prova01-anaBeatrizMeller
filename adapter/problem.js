@@ -14,6 +14,8 @@ class ExternalPaymentService {
   }
 }
 
+
+
 // Cliente
 function payOrder(processor, amount) {
   processor.processPayment(amount); // cliente espera este método
