@@ -13,11 +13,11 @@ jobs:
     name: Run Node.js 01
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4.1.1    
+    - uses: actions/checkout@v6.0.0    
     - name: Use Node.js 21
-      uses: actions/setup-node@v4.0.0
+      uses: actions/setup-node@v6.0.0
       with:
-        node-version: 21
+        node-version: 22
         cache: 'npm'    
     - run: npm install      
     - run: npm run start01
@@ -26,11 +26,24 @@ jobs:
     name: Run Node.js 02
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4.1.1    
+    - uses: actions/checkout@v6.0.0
     - name: Use Node.js 21
-      uses: actions/setup-node@v4.0.0
+      uses: actions/setup-node@v6.0.0
       with:
-        node-version: 21
+        node-version: 22
         cache: 'npm'    
     - run: npm install      
     - run: npm run start02
+
+  build03:
+    name: Run Node.js 03
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6.0.0
+    - name: Use Node.js 21
+      uses: actions/setup-node@v6.0.0
+      with:
+        node-version: 22
+        cache: 'npm'    
+    - run: npm install      
+    - run: npm run start03
