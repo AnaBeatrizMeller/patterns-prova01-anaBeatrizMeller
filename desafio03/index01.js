@@ -26,7 +26,7 @@ export class UserServiceErrado {
   try {
     const serviceErrado = new UserServiceErrado();
     const userErrado = serviceErrado.createUser("Pedro", "@example.com");
-    console.log("EXEMPLO ERRADO");
+    console.log("EXEMPLO SEM SRP");
     console.log("Usuário criado (errado):", userErrado);
   } catch (err) {
     console.error(err.message);
@@ -78,7 +78,7 @@ export class UserServiceErrado {
   try {
     const serviceCorreto = new UserServiceCorreto();
     const { user, mailResult } = serviceCorreto.createUser("Teste", "teste@example.com");
-    console.log("\nEXEMPLO CORRETO");
+    console.log("\nEXEMPLO COM SRP");
     console.log("Usuário criado (correto):", user);
     console.log("Resultado e-mail:", mailResult);
   } catch (err) {
